@@ -1,0 +1,18 @@
+{{}} - escapes
+{{{}}} - does not escape
+{{#}} - creates a loop
+	{{this}} - it's the member in order from the collection on which 
+		we use the loop
+	{{/}} - ends the loop
+
+{{#if something}} - true/false check, unable to use js expressions, only
+	a value
+	{{/if}} - end the if block
+	
+{{#unless}} - if false, enter the object
+	{{/unless}}
+
+{{@index}} - indexing
+{{@key}} - gets the key
+
+Handlebars.compile

@@ -1,0 +1,1 @@
+var collection = { name: 'Val', age: 12 }
