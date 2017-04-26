@@ -1,0 +1,23 @@
+In JS 
+
+name: function() {
+}
+
+this means multiple things in JS 
+the object instance 
+the object the function is called for 
+
+lambda funcitons are present ()dont need the brackets => {}
+
+array in JS are actually a kye:value pair, array is a refence type
+	use [] for defining the variables
+	{} - used to define new object 
+
+JS is a lazy language - blogs arent executed until they are called
+object['nameoffunction of member'] === object.nameoffunction
+
+	can take a function of object outside of the object 
+	
+typeof... - check
+inRange
+polyfill
