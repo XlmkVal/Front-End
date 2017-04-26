@@ -1,0 +1,62 @@
+document.body.innerHTML - what is inside body, without body tags, fastest
+	way to add to the DOM
+document.body.outerHTML - what is inside body, with the tags
+innerText/textContent - what text is inside  the tag
+
+Navigate 
+firstChild/lastChild - get the first/last child of the node
+nextSibling - returns anything - text, tag, etc
+	nextElementSibling - returns the next element from the tree
+prevouseSibling
+	previousElementSibling
+
+document.createElement
+something.appendChild - places it at the end
+parent.insertBefore(new, elementToPutItBefore) - place at specific place
+parent.removeChild(child) - remove an element from the DOM
+document.createDocumentFragment - normal append child is slow, so you 
+	should create buffer for the changes to be applied at once
+element.cloneNode(true) - creates deep copy for an element
+
+.className = something - sets the class of element
+	.className += something - adds to the class string
+
+classList - important, check it carefully
+[].slice.call()
+
+jquery and standard DOM API return different elements
+
+### Jquery
+
+$(selector) - selection elements, uses css way of writting things,
+	avoid chaining multiple tag/class/id, as it looks from right to left
+	use find instead
+
+
+$(selector).first().last().previous().next()
+
+	.attr(id for instanse)
+
+$(selector).appendTo.prependTo.append.prepend
+$(selector).remove() - removes element from the DOM
+let element = $('<div>')/$("<div></div>") - creating new element
+
+$(selector).on(evenet,callback) - creates an event
+ Jquery has multiple addition properties and methods
+$().anime
+
+$().css(propertyName, value) - changes the style
+$().html() - return the innerHTML, with tags
+	$().html(content) - sets the innerHTML
+	
+$().text() - returns just the text, without the tags
+	$().text(content) - sets escaped content
+
+$(funciton()) - executes on page load 
+
+$().on(event, selector, function) - the selector is what the event is 
+	attached to 
+
+.hasClass()
+.toggleClass
+.eq(number) - indexer in jquery 
